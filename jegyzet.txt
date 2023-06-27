@@ -21,9 +21,44 @@ https://www.npmjs.com/package/angularx-qrcode
 	npm install angularx-qrcode --save
 
 ionic build
-npm i -g @capacitor/core
-npm i -g -D @capacitor/cli
+
+npm i @capacitor/core							npm i -g @capacitor/core
+npm i -D @capacitor/cli							npm i -g -D @capacitor/cli
+npx cap init
+npm i @capacitor/android @capacitor/ios					npm i -g @capacitor/android @capacitor/ios
+npx cap add android
+npx cap add ios
 
 https://github.com/capacitor-community/barcode-scanner
 	npm install @capacitor-community/barcode-scanner
 	npx cap sync
+
+ionic cap add android
+npx cap add ios 
+
+
+
+qr-code-app\ios\App\App\Info.plist
+<dict>
++  <key>NSCameraUsageDescription</key>
++  <string>To be able to scan barcodes</string>
+</dict>
+
+
+
+AndroidManifest.xml/
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+  xmlns:android="http://schemas.android.com/apk/res/android"
++  xmlns:tools="http://schemas.android.com/tools"
+  package="com.example">
+
+  <application
++    android:hardwareAccelerated="true"
+  >
+  </application>
+
++  <uses-permission android:name="android.permission.CAMERA" />
+
++  <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
+</manifest>
