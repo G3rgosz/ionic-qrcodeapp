@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  qrCodeString = "Hali";
+  scannedResult: any;
+
   constructor() {}
+
+  startScan(){
+    
+  }
 
 }

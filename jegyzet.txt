@@ -1,0 +1,29 @@
+ionic start firstapp
+	angular
+	blank
+	npm i
+
+npm install -g @ionic/cli @capacitor/assets
+git clone https://github.com/G3rgosz/ionic-test.git ionic-test
+cd ionic-test && npm install && ionic serve
+
+------------------------------------------------------------------------------------------------------------------
+
+______________https://www.youtube.com/watch?v=h4LhPiKSPG0_________________________________
+
+
+ionic start qr-code-app blank --type=angular
+ionic serve
+
+
+https://www.npmjs.com/package/angularx-qrcode
+	npm i angularx-qrcode
+	npm install angularx-qrcode --save
+
+ionic build
+npm i -g @capacitor/core
+npm i -g -D @capacitor/cli
+
+https://github.com/capacitor-community/barcode-scanner
+	npm install @capacitor-community/barcode-scanner
+	npx cap sync
